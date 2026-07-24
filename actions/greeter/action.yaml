@@ -5,7 +5,7 @@ inputs:
   who-to-greet:
     required: false
     default: World
-    description: Who to greet;
+    description: Who to greet
 
 runs:
   using: composite
