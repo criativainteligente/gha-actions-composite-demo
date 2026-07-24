@@ -1,0 +1,10 @@
+name: Greeter
+description: A simple action to greet the user
+
+runs:
+  using: composite
+  steps:
+    - name: Greet
+      run: |
+        echo "Hello Worls!"
+        shell: bash
