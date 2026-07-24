@@ -13,4 +13,4 @@ runs:
     - name: Greet
       run: |
         echo "Hello ${{who-to-greet}}!"
-        shell: bash
+      shell: bash
