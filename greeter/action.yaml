@@ -1,10 +1,16 @@
 name: Greeter
 description: A simple action to greet the user
 
+inputs:
+  who-to-greet:
+    required: false
+    default: 'World'
+    description: 'Who to greet';
+
 runs:
   using: composite
   steps:
     - name: Greet
       run: |
-        echo "Hello Worls!"
+        echo "Hello ${{who-to-greet}}!"
         shell: bash
